@@ -128,15 +128,18 @@ function LlenarEntidad(obj) {
 function GuardarEntidad() {
   try {
     ValidarEntidad();
-    let obj = new Producto;
+    let obj = new Producto();
     if (idEntidad.textContent != "") {
       obj.id = idEntidad.textContent;
     }
     obj.nombre = txtNombre.value;
     obj.descripcion = txtDescripcion.value;
     obj.unidad = txtUnidad.value;
-    obj.idRubro = document.getElementById("cboRubroSelected").value
+    obj.idRubro = document.getElementById("cboRubroSelected").value;
     obj.Guardar();
+    alertOk(
+      `<strong>${obj.nombre} </strong> Se ha guardado correctamente. `
+    );
     ArmarTabla(Producto.TraerTodos());
     LimpiarEntidad();
   } catch (e) {

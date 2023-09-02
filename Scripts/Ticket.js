@@ -1,5 +1,4 @@
-let _lstTickets= [];
-
+let _lstTickets = [];
 
 class Ticket {
   constructor(Id, NroTicket, IdComercio, Fecha) {
@@ -14,16 +13,15 @@ class Ticket {
     if (_lstTickets == undefined) {
       _lstTickets = [];
       _lstTickets.push(
-        new Producto(1, 1, 1,'10/11/2023'),
-        new Producto(2, 2, 1 , '10/10/2023'),
-        new Producto(3, 3, 2,'15/12/2023'),
-        new Producto(4, 4, 3,'16/12/2023'),
+        new Producto(1, 1, 1, "10/11/2023"),
+        new Producto(2, 2, 1, "10/10/2023"),
+        new Producto(3, 3, 2, "15/12/2023"),
+        new Producto(4, 4, 3, "16/12/2023")
       );
     }
     return _lstTickets;
   }
 }
-
 
 let _lstItemTickets;
 

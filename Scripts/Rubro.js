@@ -1,5 +1,4 @@
-let _lstRubros= [];
-
+let _lstRubros = [];
 
 class Rubro {
   constructor() {

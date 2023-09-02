@@ -96,6 +96,9 @@ function GuardarEntidad() {
     }
     obj.nombre = txtNombre.value;
     obj.Guardar();
+    alertOk(
+      `<strong>${obj.nombre} </strong> Se ha guardado correctamente. `
+    );
   } catch (e) {
     alertAlerta(e.message);
   }
